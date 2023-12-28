@@ -1,7 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Models\Sobre;
+use App\Models\Contato;
+use App\Models\Equipe;
+use App\Models\Servico;
+use App\Models\Destaque;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,17 +18,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $sobre = Sobre::latest()->first()->toArray();
+    $servico_blade = Servico::all()->toArray();
+    $destaques = Destaque::all()->toArray();
+    $equipe = Equipe::all()->toArray();
+    $contato = Contato::latest()->first()->toArray();
+    return view('welcome',
+    array('sobre'=>$sobre,'missao'=>$sobre,'valores'=>$sobre,'titulo'=>$sobre,'subtitulo'=>$sobre,'contato'=>$contato,'servico'=>$servico_blade,'destaques'=>$destaques)
+)->with( array('equipe'=>$equipe));
 });
 
-Route::get('/test', function () {
-    return view('welcome');
-});
-
-Route::get('/portfolio', function () {
-    return view('portfolio');
-});
-
-Route::get('/servicos', function () {
-    return view('servicos');
+Route::get('/clientes', function () {
+    return view('clientes');
 });
