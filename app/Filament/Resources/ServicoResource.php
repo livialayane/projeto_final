@@ -4,7 +4,6 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\ServicoResource\Pages;
 use App\Filament\Resources\ServicoResource\RelationManagers;
-use App\Filament\Resources\ServicoResource\RelationManagers\ArquivosRelationManager;
 use App\Models\Servico;
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -14,12 +13,9 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-
 class ServicoResource extends Resource
 {
     protected static ?string $model = Servico::class;
-
-    //protected static ?string $inverseRelationship = 'arquivos';
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -68,12 +64,6 @@ class ServicoResource extends Resource
     {
         return [
             'index' => Pages\ManageServicos::route('/'),
-        ];
-    }
-    public static function getRelations(): array
-    {
-        return [
-            ArquivosRelationManager::class,
         ];
     }
 }

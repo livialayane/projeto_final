@@ -107,16 +107,9 @@
           </div><!-- End Client Item -->
 
           <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <a href="https://br.linkedin.com/" target="_blank"><i class="bi bi-linkedin" class="img-fluid" alt=""></i></a>
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
             <a href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube" class="img-fluid" alt=""></i></a>
           </div><!-- End Client Item -->
 
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <a href="https://www.reddit.com" target="_blank"><i class="bi bi-reddit" class="img-fluid" alt=""></i></a>
-          </div><!-- End Client Item -->
 
         </div>
 
@@ -185,30 +178,39 @@
     </section>
 
  <!-- Service Section - Home Page -->
-    <section id="services" class="faq">
+ <section id="faq" class="faq">
 
-      <div class="container">
-        <!-- Services Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Serviços</h2>
-        </div><!-- End Section Title -->
-      
-        @foreach ($servico as $texto)
-            <div class="row gy-4">
-                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-                  <div class="faq-container">
-                    <div class="faq-item">
-                      <h3><span class="num"> <div class="icon flex-shrink-0"><i class="bi bi-caret-right-fill"></i></div></span><span>{{ $texto['titulo'] }}</span></h3>
-                      <div class="faq-content">
-                        <p>{{ $texto['descricao'] }}</p>
-                      </div>
-                      <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div><!-- End Faq item-->
-                  </div>
-            </div>
-          @endforeach
+  <div class="container">
+  
+    <div class="row gy-4">
+    
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="content px-xl-5">
+          <h3><span>Conheça os nossos</span><strong> Serviços</strong></h>
+        </div>
       </div>
-    </section><!-- End Faq Section -->
+      @foreach ($servico as $texto)
+      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+        <div class="faq-container">
+          <div class="faq-item">
+            <h3><span class="num"><i class="bi bi-caret-right-fill"></i></span> <span>{{ $texto['titulo'] }}</span></h3>
+            <div class="faq-content">
+              <p>{{ $texto['descricao'] }}</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+        </div>
+
+        @endforeach
+      </div>
+      
+    </div>
+
+  </div>
+
+</section><!-- End Faq Section -->
+
       
 
 

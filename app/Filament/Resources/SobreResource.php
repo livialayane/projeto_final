@@ -24,12 +24,6 @@ class SobreResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('missao')
-                ->maxLength(65535),
-                Forms\Components\TextInput::make('valores')
-                    ->maxLength(65535),
-                Forms\Components\TextInput::make('visao')
-                    ->maxLength(65535),
                 Forms\Components\TextInput::make('titulo')
                     ->required()
                     ->maxLength(300),
@@ -37,6 +31,13 @@ class SobreResource extends Resource
                     ->required()
                     ->maxLength(65535)
                     ->columnSpanFull(),
+                Forms\Components\Textarea::make('missao')
+                    ->maxLength(65535),
+                Forms\Components\Textarea::make('valores')
+                    ->maxLength(65535),
+                Forms\Components\Textarea::make('visao')
+                    ->maxLength(65535),
+                
             ]);
     }
 

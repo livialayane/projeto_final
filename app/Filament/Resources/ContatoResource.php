@@ -25,13 +25,13 @@ class ContatoResource extends Resource
             ->schema([
                 Forms\Components\DatePicker::make('atendimento')
                     ->required(),
-                Forms\Components\TextInput::make('email')
+                Forms\Components\Textarea::make('email')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('endereço')
+                Forms\Components\Textarea::make('endereço')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('telefone')
+                Forms\Components\Textarea::make('telefone')
                     ->required()
                     ->maxLength(255),
             ]);

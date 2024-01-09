@@ -29,7 +29,7 @@ class DestaqueResource extends Resource
                     ->preserveFilenames(),
                 Forms\Components\TextInput::make('titulo')
                     ->maxLength(200),
-                Forms\Components\TextInput::make('descricao')
+                Forms\Components\Textarea::make('descricao')
                     ->maxLength(400),
                
             ]);

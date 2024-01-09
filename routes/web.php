@@ -20,6 +20,8 @@ use App\Models\Destaque;
 Route::get('/', function () {
     $sobre = Sobre::latest()->first()->toArray();
     $servico_blade = Servico::all()->toArray();
+    $arquivos = Servico::with('arquivos')->get();
+    dd (arquivos);
     $destaques = Destaque::all()->toArray();
     $equipe = Equipe::all()->toArray();
     $contato = Contato::latest()->first()->toArray();

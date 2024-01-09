@@ -703,33 +703,6 @@ section {
     margin-top: -66px;
   }
 }
-/*tooltips*/
-#tooltip a{
-  position: relative;
-  color: #000;
-}
-#tooltip a::before{
-  content: attr(data-tooltip);
-  position:absolute;
-  top:100%;
-  left:102%;
-  width: max-content;
-  font-size: 12px;
-  max-width: 250px;
-  margin-top: 8px;
-  padding: 6px;
-  background: #2e3135;
-  border-radius: 4px;
-  color: #fff;
-  opacity: 0;
-  display: none;
-}
-#tooltip a:hover::before{
-  top:100%;
-  opacity:1;
-  display: inline;
-}
-
 
 .hero img {
   position: absolute;
@@ -835,6 +808,7 @@ section {
 ------------------------------*/
 .clients {
   padding: 10px 0;
+
 }
 
 .clients .client-logo {
@@ -843,6 +817,7 @@ section {
   align-items: center;
   overflow: hidden;
   font-size: 50px;
+  width: 25%;
 }
 
 
@@ -1025,103 +1000,7 @@ section {
 }
 
 
-/* Services Section - Home Page
-------------------------------*/
-.services .service-item {
-  position: relative;
-  padding-top: 40px;
-}
-
-.services .service-item:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: rgba(var(--color-default-rgb), 0.1);
-}
-
-.services .service-item::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30px;
-  height: 2px;
-  background:#84603d;
-  border-right: 5px solid var(--color-background);
-}
-
-.services .service-item .icon {
-  width: 48px;
-  height: 48px;
-  position: relative;
-  margin-right: 50px;
-  line-height: 0;
-}
-
-.services .service-item .icon i {
-  background:linear-gradient(90deg,#bf996d,#bf996d,#6b4824,#ffd99e,#84603d,#815f3c,#815f3c);
-  -webkit-background-clip: text;
-  color:transparent;
-  font-size: 56px;
-  transition: ease-in-out 0.3s;
-  z-index: 2;
-  position: relative;
-}
-
-.services .service-item .icon:before {
-  position: absolute;
-  content: "";
-  height: 30px;
-  width: 30px;
-  background: #e6c196;
-  opacity: 0.7;
-  border-radius: 50px;
-  z-index: 1;
-  bottom: -15px;
-  right: -15px;
-  transition: 0.3s;
-}
-
-.services .service-item .title {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-  color:#000;
-}
- 
-.services .service-item .description {
-  line-height: 24px;
-  font-size: 14px;
-}
-
-.service-details .position{
-  display: flex;
-  justify-content: right;
-}
-.service-details .position span{
-  color: #6c757d;
-  font-size: 12px;
-  text-align: right;
-  
-}
-#age span{
-  color: #6c757d;
-  font-size: 12px;
-  text-align: right;
-}
-
-.description ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-
-
-/* Faq Section - Home Page
+/* Service Section - Home Page
 ------------------------------*/
 .faq .content h3 {
   color: var(--color-secondary);
@@ -1130,9 +1009,8 @@ section {
 }
 
 .faq .faq-container{
-  align-items: center;
+  margin-bottom: 10px;
 }
-
 .faq .content p {
   font-size: 15px;
   color: rgba(var(--color-default-rgb), 0.7);
@@ -1144,6 +1022,8 @@ section {
   margin-bottom: 20px;
   box-shadow: 0px 5px 25px 0px rgba(var(--color-default-rgb), 0.1);
   overflow: hidden;
+  width: 650px;
+  
 }
 
 .faq .faq-container .faq-item:last-child {
@@ -1163,7 +1043,9 @@ section {
 }
 
 .faq .faq-container .faq-item h3 .num {
-  color:#bf996d;
+   background:linear-gradient(90deg,#bf996d,#bf996d,#6b4824,#ffd99e,#84603d,#815f3c,#815f3c);
+  -webkit-background-clip: text;
+  color:transparent;
   padding-right: 5px;
 }
 
@@ -1177,6 +1059,7 @@ section {
   transition: 0.3s ease-in-out;
   visibility: hidden;
   opacity: 0;
+  
 }
 
 .faq .faq-container .faq-item .faq-content p {
@@ -1383,6 +1266,7 @@ section {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  white-space: pre-wrap;
 }
 
 
