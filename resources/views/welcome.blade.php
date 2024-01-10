@@ -27,13 +27,6 @@
   <!-- Template Main CSS File -->
   <link href="{{ asset('/css/main.css') }}" rel="stylesheet">
 
-  <!-- ========================================================
-  * Template Name: Append
-  * Updated: Jun 01 2023 with Bootstrap v5.3.0
-  * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
@@ -86,36 +79,6 @@
         </div>
 
     </section><!-- End Hero Section -->
-
-    <!-- Clients Section - Home Page -->
-    <section id="clients" class="clients">
-
-      <div class="container-fluid" data-aos="fade-up">
-
-        <div class="row gy-4">
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <a href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter" class="img-fluid" alt=""></i></a>
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook" class="img-fluid" alt=""></i></a>
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <a href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube" class="img-fluid" alt=""></i></a>
-          </div><!-- End Client Item -->
-
-
-        </div>
-
-      </div>
-
-    </section><!-- End Clients Section -->
 
     <!-- About Section - Home Page -->
     <section id="about" class="about">
@@ -326,12 +289,6 @@
 
     <div class="container copyright text-center mt-4">
       <p>&copy; <span>Copyright</span> <strong class="px-1">Lourenna Fernandes</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/append-bootstrap-website-template/ -->
-      </div>
     </div>
 
   </footer><!-- End Footer -->
